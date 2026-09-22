@@ -1,0 +1,25 @@
+# OS / editors
+.DS_Store
+__MACOSX/
+.vscode/
+.idea/
+
+# Python / Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+
+# Datasets and model weights: notebooks download what they need at runtime
+*.zip
+*.tar
+*.tar.gz
+*.parquet
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.ckpt
+*.safetensors

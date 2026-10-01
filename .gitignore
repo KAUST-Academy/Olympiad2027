@@ -23,3 +23,9 @@ venv/
 *.pth
 *.ckpt
 *.safetensors
+
+# competition data never enters the repo (only sample_submission.csv is public)
+L1/Comps/*/train.csv
+L1/Comps/*/test.csv
+L1/Comps/*/solution.csv
+L1/Comps/*/competition_data/

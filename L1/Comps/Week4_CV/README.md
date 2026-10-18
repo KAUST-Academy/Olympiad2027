@@ -16,7 +16,6 @@ training loop, validate, submit. Everything you need was taught between Day 22 a
 | What | Riyadh time (UTC+3) | UTC |
 |---|---|---|
 | Competition opens, data and starter notebook published | Sun 18 Oct, 16:00 | Sun 18 Oct, 13:00 |
-| Last moment to form or merge a team | Sun 18 Oct, 18:00 | Sun 18 Oct, 15:00 |
 | Competition closes, private leaderboard revealed | Sun 18 Oct, 22:00 | Sun 18 Oct, 19:00 |
 | Notebook hand-in closes (Day 28 Google Form) | Sun 18 Oct, 22:30 | Sun 18 Oct, 19:30 |
 
@@ -70,15 +69,15 @@ Probabilities are not accepted; the starter's `make_submission` function writes 
 
 ## Rules
 
-1. **Teams** of at most 3 students; solo is allowed. Form or merge a team on the Kaggle page before 18:00 Riyadh time. One team per student.
-2. **10 submissions per team.** The whole window sits inside one Kaggle day, so the counter does not reset.
+1. **Solo only.** Every student competes alone: no teams, no merging, one Kaggle account per student.
+2. **10 submissions per student.** The whole window sits inside one Kaggle day, so the counter does not reset.
 3. **Allowed tools:** PyTorch, torchvision, NumPy, pandas, matplotlib, scikit-learn, and anything else taught in Weeks 3 and 4.
-4. **Train your own network.** Every parameter of your model starts from random weights: no pretrained weights of any kind (no torchvision model zoo, no YOLO checkpoint, no CLIP). This week's skill is building and training the network yourself; pretrained models are next week's tool.
-5. **No other data.** No other pictures of any kind, and no searching for where these pictures come from. Everything you need is in `train/`.
-6. **Your own work:** you may discuss ideas with other teams, but every line of code in your notebook is written by your team.
-7. **Hand in your final notebook** (one per team, the team name in the first cell) through the Day 28 Google Form by 22:30 Riyadh time. A score without a notebook does not count.
+4. **Pretrained models are allowed** (torchvision weights, the YOLO checkpoints, CLIP, or a network you train yourself), on one condition: your final notebook, restarted and run top to bottom, must finish in **under 30 minutes** on a Kaggle GPU notebook. The starter prints the run time next to the submission file; a handed-in notebook that cannot finish in 30 minutes does not count.
+5. **No other pictures.** Pretrained weights are fine; extra training pictures of any kind are not, and no searching for where these pictures come from. Everything you need is in `train/`.
+6. **Your own work:** you may discuss ideas with other students, but every line of code in your notebook is written by you.
+7. **Hand in your final notebook** (your name in the first cell, outputs kept) through the Day 28 Google Form by 22:30 Riyadh time. A score without a notebook does not count.
 8. **Final ranking:** the private leaderboard. Ties are broken by the earlier of the two final submissions.
-9. Do not modify the two cells marked *do not modify* in the starter notebook; they keep your file in the right shape.
+9. Do not modify the two cells marked *do not modify* in the starter notebook; they keep your file in the right shape and print the run time.
 
 ## Getting started
 
@@ -90,8 +89,9 @@ Probabilities are not accepted; the starter's `make_submission` function writes 
 
 ## FAQ
 
-- **Can I use a pretrained network (a torchvision ResNet, the YOLO weights, CLIP)?** No. Every parameter must start random; that is rule 4. Transfer learning is the subject of Week 5.
-- **The pictures are tiny. Should I resize them up?** You can, but it adds no information. A network built for 32 x 32 inputs (three poolings take it to 4 x 4) is enough; Day 25 shows how to trace the shapes.
+- **Can I use a pretrained network (a torchvision ResNet, the YOLO weights, CLIP)?** Yes, as long as your whole notebook runs top to bottom in under 30 minutes (rule 4). On Kaggle, downloading weights needs Internet switched on in the notebook settings (a phone-verified account); on Colab it works directly.
+- **How is the 30-minute limit checked?** Restart and run all before you hand in. The starter's last cell prints how many minutes passed since the data was loaded, and that line stays in the notebook you upload. Keep it under 30 on a Kaggle GPU.
+- **The pictures are tiny. Should I resize them up?** For a network you train yourself it adds no information: a network built for 32 x 32 inputs (three poolings take it to 4 x 4) is enough, and Day 25 shows how to trace the shapes. A pretrained network expects bigger inputs, so resize for it (64 or 96 pixels is plenty) and watch the clock.
 - **What is in the pictures?** Everyday objects, vehicles and animals, the same kinds in both classes. The question is how a picture was made, not what it shows.
 - **My validation accuracy says 0.78 and the public board says 0.75 (or 0.81).** Both can be right: the public board is 40% of the test pictures, and a score on that many pictures moves by about 0.01 from luck alone. Keep the model your validation prefers, the way Day 27 says.
 - **Can I submit probabilities?** No. The score needs `0`/`1` labels. Take `argmax` over the two outputs (or compare the probability with 0.5).

@@ -2,7 +2,7 @@
 
 **Sunday 18 October 2026, 16:00 to 22:00 (Riyadh time). 6 hours.**
 
-**Join on Kaggle:** the invitation link is posted in the course channel when the competition opens.
+**Join on Kaggle:** https://www.kaggle.com/t/b92e9a3ed5664118b994da5a9ec66fc8 (invitation link; sign in with your Kaggle account, then click Join).
 
 A photo-sharing app receives thousands of tiny thumbnails every day. Some are real photos taken with a camera. Others were made by an image-generation model that was trained to imitate such photos, and the app wants to flag those automatically. For the training pictures you get the picture and the answer; for the test pictures you get only the picture.
 

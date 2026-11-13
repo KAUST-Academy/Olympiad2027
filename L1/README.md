@@ -5,7 +5,7 @@
   <img src="assets/img/banner.png" alt="KAUST Academy and Mawhiba">
 </picture>
 
-Welcome to the **KAUST Academy & Mawhiba AI Olympiad 2027 Training, Level 1 (Beginners)** programme. This repository contains all slides, labs and competition material for the six-week course (September 19 to October 30, 2026) that prepares Grade 8 to 10 students for AI Olympiad competitions: Python and data science, machine learning, neural networks and deep learning, computer vision, transfer learning and embeddings, and natural language processing.
+Welcome to the **KAUST Academy & Mawhiba AI Olympiad 2027 Training, Level 1 (Beginners)** programme. This repository contains all slides, labs and competition material for the course (September 19 to November 27, 2026) that prepares Grade 8 to 10 students for AI Olympiad competitions: Python and data science, machine learning, neural networks and deep learning, computer vision, transfer learning and embeddings, natural language processing, and the November Camp on real Olympiad tasks.
 
 ## Course Materials
 
@@ -27,7 +27,7 @@ Access the course content through our GitHub Pages site:
 
 ## Schedule
 
-The programme runs over six weeks, seven days each. Every week closes with a Coursera exam and a mock Olympiad competition.
+The programme runs over six weeks and the November Camp. Every week, and every block of the camp, closes with an exam and a mock Olympiad competition.
 
 | Week | Dates | Topic | Content |
 |------|-------|-------|---------|
@@ -36,7 +36,8 @@ The programme runs over six weeks, seven days each. Every week closes with a Cou
 | Week 3 | October 3 – 9 | NNs & DL | [Week 3 Content](https://kaust-academy.github.io/Olympiad2027/L1/week3/) |
 | Week 4 | October 10 – 16 | CV | [Week 4 Content](https://kaust-academy.github.io/Olympiad2027/L1/week4/) |
 | Week 5 | October 17 – 23 | Transfer Learning & Embeddings | [Week 5 Content](https://kaust-academy.github.io/Olympiad2027/L1/week5/) |
-| Week 6 | October 24 – 30 | NLP | [Week 6 Content](https://kaust-academy.github.io/Olympiad2027/L1/week6/) |
+| Week 6 | November 14 – 17 | NLP | [Week 6 Content](https://kaust-academy.github.io/Olympiad2027/L1/week6/) |
+| November Camp | November 18 – 27 | Unsupervised Learning, Vision, Tabular ML | [November Camp Content](https://kaust-academy.github.io/Olympiad2027/L1/november-camp/) |
 
 ## License
 

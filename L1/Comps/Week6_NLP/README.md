@@ -72,7 +72,7 @@ Each time you write a better file, run the checkpoint under it in the notebook *
 ## Rules
 
 1. **Solo only.** Every student competes alone: no teams, no merging, one Kaggle account per student, the account linked to your student id by your instructor.
-2. **10 submissions per student.** The whole competition sits inside one Kaggle day, so the counter does not reset.
+2. **20 submissions per student.** The whole competition sits inside one Kaggle day, so the counter does not reset.
 3. **Your own work.** You may not get help on the code from other people. AI assistants (chatbots, code completion such as Gemini in Colab or Copilot) are switched off for the whole competition.
 4. **Allowed tools:** everything taught in Weeks 1 to 6: Python, NumPy, pandas, scikit-learn, PyTorch, and Hugging Face `transformers`.
 5. **Pretrained models are allowed**, such as a BERT or RoBERTa from Hugging Face, with one exception: **no model that was already trained to detect hate, toxicity or offensive language**. Such models learned from posts like these, answers included.
